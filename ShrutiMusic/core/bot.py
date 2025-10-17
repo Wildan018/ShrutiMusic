@@ -19,10 +19,27 @@
 # Contact for permissions:
 # Email: badboy809075@gmail.com
 
+import asyncio
+import sys
+
+# Pastikan ada event loop di MainThread sebelum mengimpor/menjalankan uvloop/pyrogram
+try:
+    # Jika sudah ada running loop, tidak lakukan apa-apa
+    asyncio.get_running_loop()
+except RuntimeError:
+    # Tidak ada loop -> buat dan set
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
+# Debug singkat supaya terlihat di logs bahwa loop telah diset
+print("DEBUG: asyncio event loop ensured in core.bot", file=sys.stderr)
+
+# Sekarang install uvloop (aman karena loop sudah di-set)
 import uvloop
-
 uvloop.install()
+print("DEBUG: uvloop installed", file=sys.stderr)
 
+# Import pyrogram setelah event loop/uvloop terpasang
 import pyrogram
 from pyrogram import Client
 from pyrogram.enums import ChatMemberStatus, ParseMode
