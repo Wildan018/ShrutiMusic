@@ -22,6 +22,9 @@
 
 import ShrutiMusic.async_fix
 
+import sys
+print("DEBUG: ShrutiMusic.__init__ loaded", file=sys.stderr)
+
 from ShrutiMusic.core.bot import Nand
 from ShrutiMusic.core.dir import dirr
 from ShrutiMusic.core.git import git
