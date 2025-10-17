@@ -65,7 +65,7 @@ GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/Disney_storeDan")
 SUPPORT_GROUP = os.getenv("SUPPORT_GROUP", "https://t.me/musik_supportdan")
-INSTAGRAM = os.getenv("INSTAGRAM", "https://www.instagram.com/wldn.18__?igsh=NnV0cXQ5aXFwZzI1")
+INSTAGRAM = os.getenv("INSTAGRAM", "https://www.instagram.com/wldn.18__")
 BUYUSERBOT = os.getenv("BUYUSERBOT", "https://t.me/WildanUltraPrem_bot")
 MAVIASTORY = os.getenv("MAVIASTORY", "https://t.me/MaviaStoryChannel")
 DONATE = os.getenv("DONATE", "https://t.me/mhmdwldnnnn")
