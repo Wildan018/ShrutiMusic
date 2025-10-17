@@ -14,12 +14,12 @@
   "env": {
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "29448785",
+      "value": "",
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "599574f6aff0a09ebb76305b58e7e9c2",
+      "value": "",
       "required": true
     },
     "BOT_TOKEN": {
@@ -29,27 +29,27 @@
     },
     "MONGO_DB_URI": {
       "description": "Get a mongodb url from https://cloud.mongodb.com.",
-      "value": "mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION",
+      "value": "",
       "required": true
     },
     "OWNER_ID": {
       "description": "The user id of user whom you would like to add as OWNER.",
-      "value": "7574330905",
+      "value": "5779185981",
       "required": true
     },
     "OWNER_USERNAME": {
       "description": "The username of the owner (without @)",
-      "value": "WTF_WhyMeeh",
+      "value": "mhmdwldnnnn",
       "required": true
     },
     "BOT_USERNAME": {
       "description": "The username of your bot (without @)",
-      "value": "ShrutixMusicBot",
+      "value": "Capricorn_MusicBot",
       "required": true
     },
     "UPSTREAM_REPO": {
       "description": "URL of your GitHub repository",
-      "value": "https://github.com/NoxxOP/ShrutiMusic",
+      "value": "https://github.com/Wildan018/ShrutiMusic",
       "required": false
     },
     "STRING_SESSION": {
@@ -74,37 +74,37 @@
     },
     "LOG_GROUP_ID": {
       "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
-      "value": "-1002321189618",
+      "value": "-1001969246312",
       "required": true
     },
     "SUPPORT_GROUP": {
       "description": "Your support group username (without @)",
-      "value": "https://t.me/ShrutiBotsupport",
+      "value": "https://t.me/musik_supportdan",
       "required": false
     },
     "SUPPORT_CHANNEL": {
       "description": "Your support channel username (without @)",
-      "value": "https://t.me/ShrutiBots",
+      "value": "https://t.me/Disney_storeDan",
       "required": false
     },
     "INSTAGRAM": {
       "description": "Your Instagram profile link",
-      "value": "https://instagram.com/yaduwanshi_nand",
+      "value": "https://www.instagram.com/wldn.18__",
       "required": false
     },
-    "YOUTUBE": {
-      "description": "Your YouTube channel link",
-      "value": "https://youtube.com/@NandEditz",
+    "BUYUSERBOT": {
+      "description": "Your Buyuserbot channel link",
+      "value": "https://t.me/WildanUltraPrem_bot",
       "required": false
     },
     "GITHUB": {
       "description": "Your GitHub profile link",
-      "value": "https://github.com/NoxxOP",
+      "value": "https://github.com/Wildan018",
       "required": false
     },
     "DONATE": {
       "description": "Link where people can support/donate",
-      "value": "https://t.me/ShrutiBots/91",
+      "value": "https://t.me/mhmdwldnnnn",
       "required": false
     },
     "COOKIE_URL": {
@@ -114,7 +114,7 @@
     },
     "START_IMG_URL": {
       "description": "Image that appears with the /start command",
-      "value": "",
+      "value": "https://files.catbox.moe/hgtn8x.jpg",
       "required": false
     }
   },
