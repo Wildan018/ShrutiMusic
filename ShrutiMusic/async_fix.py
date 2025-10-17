@@ -9,8 +9,5 @@ def ensure_event_loop():
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
 
-# jalankan saat diimpor agar proteksi berlaku seawal mungkin
 ensure_event_loop()
-
-# DEBUG: cetak agar terlihat di logs bahwa async_fix dieksekusi
-print("async_fix loaded", file=sys.stderr)
+print("DEBUG: ShrutiMusic.async_fix loaded and event loop ensured", file=sys.stderr)
