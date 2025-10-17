@@ -97,9 +97,9 @@
       "value": "https://t.me/WildanUltraPrem_bot",
       "required": false
     },
-    "GITHUB": {
-      "description": "Your GitHub profile link",
-      "value": "https://github.com/Wildan018",
+    "MAVIASTORY": {
+      "description": "Your Maviastory profile link",
+      "value": "https://t.me/MaviaStoryChannel",
       "required": false
     },
     "DONATE": {
