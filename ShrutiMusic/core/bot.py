@@ -20,29 +20,26 @@
 # Email: badboy809075@gmail.com
 
 import asyncio
-
+import asyncio
 import sys
 print("DEBUG: core.bot executing (top of file)", file=sys.stderr)
-# ... lalu pembuatan event loop atau import uvloop/pyrogram seperti sebelumnya
 
-# Pastikan ada event loop di MainThread sebelum mengimpor/menjalankan uvloop/pyrogram
+# Pastikan ada event loop di MainThread sebelum mengimpor/menjalankan pyrogram
 try:
-    # Jika sudah ada running loop, tidak lakukan apa-apa
     asyncio.get_running_loop()
 except RuntimeError:
-    # Tidak ada loop -> buat dan set
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
-# Debug singkat supaya terlihat di logs bahwa loop telah diset
 print("DEBUG: asyncio event loop ensured in core.bot", file=sys.stderr)
 
-# Sekarang install uvloop (aman karena loop sudah di-set)
-import uvloop
-uvloop.install()
-print("DEBUG: uvloop installed", file=sys.stderr)
+# Jangan lakukan uvloop.install() di sini — policy sudah diset di async_fix/startup.
+# Jika uvloop sudah di-set sebagai policy di async_fix/start.py, tidak perlu install lagi.
+# import uvloop
+# uvloop.install()
+# print("DEBUG: uvloop installed", file=sys.stderr)
 
-# Import pyrogram setelah event loop/uvloop terpasang
+# Import pyrogram setelah event loop/policy terpasang
 import pyrogram
 from pyrogram import Client
 from pyrogram.enums import ChatMemberStatus, ParseMode
@@ -54,7 +51,6 @@ from pyrogram.types import (
 import config
 
 from ..logging import LOGGER
-
 
 class Nand(Client):
     def __init__(self):
