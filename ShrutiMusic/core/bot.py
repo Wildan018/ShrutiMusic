@@ -20,7 +20,10 @@
 # Email: badboy809075@gmail.com
 
 import asyncio
+
 import sys
+print("DEBUG: core.bot executing (top of file)", file=sys.stderr)
+# ... lalu pembuatan event loop atau import uvloop/pyrogram seperti sebelumnya
 
 # Pastikan ada event loop di MainThread sebelum mengimpor/menjalankan uvloop/pyrogram
 try:
